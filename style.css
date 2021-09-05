@@ -8,11 +8,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 50px;
   padding: 5px;
 }
+
+/* Text */
 
 .text p {
   padding: 5px;
@@ -103,4 +105,22 @@
   background: rgb(2, 24, 37);
   box-shadow: none;
   transition: 0.25s ease-in-out;
+}
+
+/* Lorem */
+
+.lorem {
+  width: 700px;
+}
+
+.lorem p {
+  margin-top: 50px;
+}
+
+.lorem p:first-child:first-line {
+  color: red;
+}
+
+.lorem p:last-child::first-letter {
+  color: red;
 }
